@@ -1,0 +1,3 @@
+[submodule "code/map-server"]
+	path = code/map-server
+	url = git@github.com:Pivotal-Japan/map-server.git
