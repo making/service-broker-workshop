@@ -1,9 +1,9 @@
 ## 【演習】独自サービスのService Broker
 
 [はじめてのService Broker](first-service-broker.md)で、Service Brokerの作り方の基礎を学びました。
-学んだ内容を使って、次は既存のサービスに対するService Brokerを作成しましょう。
+学んだ内容を使って、次は既存のサービスに対するService Brokerを作成しましょう。
 
-ここでは仮想既存サービスとして、簡易KVS実装である[Map Server](../code/map-server)を使用します。
+ここでは仮想既存サービスとして、簡易KVS実装である[Map Server](https://github.com/Pivotal-Japan/map-server)を使用します。
 
 
 #### 【演習1】 Map ServerのAPIを把握する
@@ -34,12 +34,12 @@ Map Serverは次のようなマルチテナント構成になっています。
 
 #### 【演習2】 Map ServerのService Brokerを実装する
 
-[Map Server Sevrice Broker](../code/map-server-service-broker)の`ServiceInstanceService`、`ServiceInstanceBindingService`を実装してください。
+[Map Server Sevrice Broker](https://github.com/Pivotal-Japan/map-server-service-broker/tree/lab)の`ServiceInstanceService`、`ServiceInstanceBindingService`を実装してください。
 
 TODO:01~07を埋める形になっています。
 
 #### 【演習3】Map Server Service Brokerをデプロイする
 
-`map-server`の`README`を参考に[Map Server Sevrice Broker](../code/map-server-service-broker)をデプロイしてください。
+`map-server`の`README`を参考に[Map Server Sevrice Broker](https://github.com/Pivotal-Japan/map-server-service-broker/tree/lab)をデプロイしてください。
 
 またexampleフォルダにあるサンプルアプリケーションからMap Serverにアクセスしてください。
