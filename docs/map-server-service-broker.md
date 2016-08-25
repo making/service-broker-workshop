@@ -5,6 +5,9 @@
 
 ここでは仮想既存サービスとして、REST APIでアクセスできる簡易KVS実装である[Map Server](https://github.com/Pivotal-Japan/map-server)を使用します。
 
+この演習では、既存のMap Serverに対するService Brokerを実装して、サンプルアプリケーションからアクセスできるようにします。
+
+![image](https://qiita-image-store.s3.amazonaws.com/0/1852/1b171dfe-ee21-dcbe-4d19-3489efc40fad.png)
 
 #### 【演習1】 Map ServerのAPIを把握する
 
