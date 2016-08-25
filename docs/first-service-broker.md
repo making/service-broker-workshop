@@ -527,6 +527,7 @@ p-demo       free         A demo service broker
 > ``` console
 > $ cf create-service-broker p-demo demo demo http://first-service-broker-<yourname>.<domain>
 > $ cf enable-service-access p-demo [-p PLAN] [-o ORG]
->
-> で、対象のOrganizationにService Brokerを公開することができます。
 > ```
+> 
+> で、対象のOrganizationにService Brokerを公開することができます。
+
