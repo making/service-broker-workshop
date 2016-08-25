@@ -24,7 +24,7 @@ Map Serverは次のようなマルチテナント構成になっています。
             `- [Space] -+- ...
 ```
 
-`map-server`の`README`を参考に、`map-server`をCloud Foundryにデプロイし、
+`map-server`の[`README`](https://github.com/Pivotal-Japan/map-server)を参考に、`map-server`をCloud Foundryにデプロイし、
 以下のAPIを`curl`で実行してください。
 
 * Create Space
@@ -64,7 +64,7 @@ TODO:01~07を埋める形になっています。
 
 #### 【演習3】Map Server Service Brokerをデプロイする
 
-`map-server`の`README`を参考に[Map Server Sevrice Broker](https://github.com/Pivotal-Japan/map-server-service-broker/tree/lab)をデプロイしてください。
+`map-server-service-broker`の[`README`](https://github.com/Pivotal-Japan/map-server-service-broker/tree/lab)を参考にMap Server Sevrice Brokerをデプロイしてください。
 
 またexampleフォルダにある[サンプルアプリケーション](https://github.com/Pivotal-Japan/map-server-service-broker/tree/lab/example)でデプロイして、Map Serverにアクセスしてください。
 
