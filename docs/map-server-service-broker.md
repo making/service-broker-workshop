@@ -57,12 +57,12 @@ TODO:01~07を埋める形になっています。
 
 ![image](https://qiita-image-store.s3.amazonaws.com/0/1852/0bbffa20-e98b-7092-3bd5-b1ed5e6d4177.png)
 
-
+`MapServerClient`クラスに必要な処理が実装されているので、このクラスのメソッドを呼び出してください。
 
 #### 【演習3】Map Server Service Brokerをデプロイする
 
 `map-server`の`README`を参考に[Map Server Sevrice Broker](https://github.com/Pivotal-Japan/map-server-service-broker/tree/lab)をデプロイしてください。
 
-またexampleフォルダにあるサンプルアプリケーションからMap Serverにアクセスしてください。
+またexampleフォルダにある[サンプルアプリケーション](https://github.com/Pivotal-Japan/map-server-service-broker/tree/lab/example)でデプロイして、Map Serverにアクセスしてください。
 
 
