@@ -507,5 +507,27 @@ $ cf push first-service-broker-<yourname> -p target/demo-0.0.1-SNAPSHOT.jar -m 5
 
 
 ``` console
-$ cf create-service-broker p-demo demo demo http://first-service-broker-<yourname>.<domain>
+$ cf create-service-broker p-demo demo demo http://first-service-broker-<yourname>.<domain> --space-scoped
 ```
+
+`cf marketplace`で`p-demo`が登録されていることを確認してください。
+
+``` console
+$ cf marketplace
+
+service      plans        description
+p-demo       free         A demo service broker
+...
+```
+
+> **ノート**
+> 
+> 管理者権限がある場合は
+>
+> ``` console
+> $ cf create-service-broker p-demo demo demo http://first-service-broker-<yourname>.<domain>
+> $ cf enable-service-access p-demo [-p PLAN] [-o ORG]
+> ```
+> 
+> で、対象のOrganizationにService Brokerを公開することができます。
+
