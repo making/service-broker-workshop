@@ -363,7 +363,6 @@ package com.example;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.UUID;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -384,8 +383,8 @@ public class FirstServiceBrokerApplication {
 	@Bean
 	Catalog catalog() {
 		return new Catalog(Collections
-				.singletonList(new ServiceDefinition(UUID.randomUUID().toString(), "p-demo", "A demo service broker", true, false,
-						Collections.singletonList(new Plan("free", "free", "free plan", new HashMap<String, Object>() {
+				.singletonList(new ServiceDefinition("p-demo-<your name>", "p-demo-<your name>", "A demo service broker", true, false,
+						Collections.singletonList(new Plan("free-demo-<your name>", "free", "free plan", new HashMap<String, Object>() {
 							{
 								put("costs", Collections.singletonList(new HashMap<String, Object>() {
 									{
@@ -507,16 +506,16 @@ $ cf push first-service-broker-<yourname> -p target/demo-0.0.1-SNAPSHOT.jar -m 5
 
 
 ``` console
-$ cf create-service-broker p-demo demo demo http://first-service-broker-<yourname>.<domain> --space-scoped
+$ cf create-service-broker p-demo-<your name> demo demo http://first-service-broker-<yourname>.<domain> --space-scoped
 ```
 
-`cf marketplace`で`p-demo`が登録されていることを確認してください。
+`cf marketplace`で`p-demo-<your name>`が登録されていることを確認してください。
 
 ``` console
 $ cf marketplace
 
 service      plans        description
-p-demo       free         A demo service broker
+p-demo-xxxx       free         A demo service broker
 ...
 ```
 
@@ -525,8 +524,8 @@ p-demo       free         A demo service broker
 > 管理者権限がある場合は
 >
 > ``` console
-> $ cf create-service-broker p-demo demo demo http://first-service-broker-<yourname>.<domain>
-> $ cf enable-service-access p-demo [-p PLAN] [-o ORG]
+> $ cf create-service-broker p-demo-<your name> demo demo http://first-service-broker-<yourname>.<domain>
+> $ cf enable-service-access p-demo-<your name> [-p PLAN] [-o ORG]
 > ```
 > 
 > で、対象のOrganizationにService Brokerを公開することができます。
